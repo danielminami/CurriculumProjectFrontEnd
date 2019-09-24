@@ -1,0 +1,17 @@
+<h1> Home </h1>
+
+<ul *ngIf="users">
+    <li *ngFor="let user of users">
+        <a [title]="user.name + ' details'">
+        ID: {{user.id}} | Name: {{user.name}}
+        </a>
+    </li>
+</ul>
+
+<!--  
+<ul *ngIf="users">
+    <li *ngFor="let lang of users.language">
+        {{lang.id}}
+    </li>
+</ul>
+-->
